@@ -1,0 +1,36 @@
+{
+  "name": "@daolity/tclib",
+  "version": "0.0.3",
+  "description": "A library for creating tokens",
+  "main": "build/index.js",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "start": "node build/index.js",
+    "test": "jest --config jestconfig.json --coverage",
+    "build": "tsc -d",
+    "type-check": "tsc --noEmit",
+    "format": "npx prettier --write src/**/*.ts",
+    "lint": "npx tslint -p tsconfig.json",
+    "preversion": "npm run format",
+    "release": "standard-version",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "daolity",
+  "license": "MIT",
+  "readme": "README.md",
+  "keywords": [
+    "daolity",
+    "sdk",
+    "api",
+    "nft",
+    "blockchain"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "ethers": "^6.10.0"
+  }
+}
