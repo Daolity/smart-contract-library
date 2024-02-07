@@ -1,0 +1,7 @@
+{
+  "name": "token-creation-library",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "daolity",
+  "license": "MIT"
+}
